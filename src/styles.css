@@ -1,0 +1,34 @@
+@media (hover: hover) and (pointer: fine) {
+  .nav_dropdown-list {
+    transform: translateY(0.5rem);
+    transition: all 0.4s cubic-bezier(0.71, 0.05, 0.17, 0.97);
+  }
+
+  .dropdown-chevron {
+    transition: transform 0.4s cubic-bezier(0.71, 0.05, 0.17, 0.97);
+  }
+
+  .nav_dropdown:hover .nav_dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-0.5rem);
+  }
+
+  .nav_dropdown:hover .dropdown-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_dropdown-list {
+    position: relative;
+    display: none;
+    transform: translateY(0);
+  }
+
+  .nav_dropdown-list.active {
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+  }
+}
