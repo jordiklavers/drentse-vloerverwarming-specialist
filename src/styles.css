@@ -1,6 +1,8 @@
 @media (hover: hover) and (pointer: fine) {
   .nav_dropdown-list {
     transform: translateY(0.5rem);
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.4s cubic-bezier(0.71, 0.05, 0.17, 0.97);
   }
 
